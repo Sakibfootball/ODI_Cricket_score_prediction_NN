@@ -87,7 +87,7 @@ if st.button('Predict Score'):
      {'bat_team': [bat_team], 'bowl_team': [bowl_team],
       'venue': [venue], 'overs': [overs], 'runs': [runs],
       # 'balls_left': [balls_left],
-      'wickets': [wickets],
+      'wickets': [wickets_left],
       'runrate': [runrate], 'runs_last_5': [last_five], 'merge_weight': [merge_weight],
       'wickets_last_5': [wickets_last_5]})
 
