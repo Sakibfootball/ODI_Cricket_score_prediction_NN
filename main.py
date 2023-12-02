@@ -5,7 +5,7 @@ import numpy as np
 import xgboost
 from xgboost import XGBRegressor
 
-pipe = pickle.load(open('pipeline_nn.pkl', 'rb'))
+pipe = pickle.load(open('pipeline_nn_new.pkl', 'rb'))
 
 teams = ['England', 'Pakistan', 'Sri Lanka', 'Australia', 'South Africa',
        'New Zealand', 'India', 'Zimbabwe', 'West Indies', 'Ireland',
@@ -87,8 +87,8 @@ if st.button('Predict Score'):
      {'bat_team': [bat_team], 'bowl_team': [bowl_team],
       'venue': [venue], 'overs': [overs], 'runs': [runs],
       # 'balls_left': [balls_left],
-      'wickets': [wickets_left],
-      'runrate': [runrate], 'runs_last_5': [last_five], 'merge_weight': [merge_weight],
+      'wickets': [wickets],
+      'runrate': [runrate], 'runs_last_5': [last_five],
       'wickets_last_5': [wickets_last_5]})
 
     # input_df = pd.DataFrame(
